@@ -10,11 +10,11 @@
   </style>
 {% endblock %}
 {% block content %}
-    <h1>Add New Restaurant</h1>
+    <h1>Add New</h1>
 
     <form method="POST" action="{{ url_for('add_restaurant') }}">
         <div class="mb-3">
-          <label for="restaurant_name" class="form-label">Name</label>
+          <label for="restaurant_name" class="form-label">Nom</label>
           <input type="text" class="form-control" id="restaurant_name" name="restaurant_name">
         </div>
         <div class="mb-3">
@@ -25,7 +25,7 @@
             <label for="description" class="form-label">Description</label>
             <input type="text" class="form-control" id="description" name="description">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Add</button>
         <button type="cancel" class="btn btn-primary">Cancel</button>
     </form>
 {% endblock %}
